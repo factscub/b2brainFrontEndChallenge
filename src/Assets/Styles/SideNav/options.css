@@ -1,0 +1,107 @@
+.options,
+.optBox,
+.singleOpt {
+    width: 100%;
+}
+
+.optBox {
+    margin: 10px 0px;
+
+}
+
+.icon {
+    width: 20px;
+}
+.icon,
+.toggle{
+    height: 16px;
+}
+.icon,
+.toggle,
+.verticalLine
+{
+    display: flex;
+    justify-content: center;
+}
+
+.popInfo,
+.optBox{
+    display: flex;
+    align-items: center;
+}
+
+.text {
+    padding-left: 15px;
+}
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+.textLink:not(.singleOpt:first-child .optBox .text .textLink) {
+    font-size: 16px;
+    font-weight: 400;
+    color: black;
+}
+
+.popInfo {
+    font-size: 10px;
+    line-height: 13.66px;
+    margin-right: 14px;
+    margin-left: auto;
+    background: #FF7474;
+    border-radius: 22px;
+    height: 16px;
+}
+
+.popInfo>p {
+    color: white;
+    padding: 1px 7px;
+
+}
+
+.toggle {
+    width: 14px;
+    margin-left: auto;
+    margin-right: 15px;
+    align-items: center;
+    transform: rotate(180deg);
+}
+
+.collapCont {
+    display: flex;
+}
+
+
+/* hides collapse container */
+.hide {
+    display: none;
+
+}
+
+.collapList,
+.verticalLine,
+.icon {
+    margin-left: 15px;
+}
+
+.verticalLine {
+    width: 20px;
+
+}
+
+.vl {
+    width: 1.3px;
+    background: #DBE0E8;
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+
+}
+
+.collapTxt {
+    font-size: 14px;
+    list-style: none;
+    line-height: 29px;
+    opacity: 0.6;
+    font-weight: 400;
+}

@@ -1,0 +1,24 @@
+.quickActions{
+    margin-left: auto;
+    margin-right: 175px;
+}
+
+.actionHeading {
+    opacity: 0.5;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 30px;
+    width: 150px;
+}
+
+.action {
+    display: block;
+    text-decoration: none;
+    color: black;
+    margin-top: 27px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    cursor: pointer;
+}

@@ -1,0 +1,16 @@
+
+.searchHeading {
+    display: inline;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 30px;
+    opacity: 0.5;
+    margin-left: 57px;
+    background-color: white;
+}
+
+.searches{
+    display: flex;
+    flex-wrap: wrap;
+}

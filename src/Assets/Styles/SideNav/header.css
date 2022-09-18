@@ -1,0 +1,15 @@
+.header {
+    display: flex;
+    height: 60px;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.heading {
+    padding: 15px 8px 15px 7px;
+}
+
+.logo {
+    padding: 15px;
+}
