@@ -9,7 +9,7 @@ export default function Options() {
     function collapseHandler(e) {
     
         const curElement = e.currentTarget.parentElement.parentElement
-        if (curElement.nextElementSibling.classList.contains('collapCont')) {
+        if (curElement.nextElementSibling?.classList.contains('collapCont')) {
 
             if (curElement.nextElementSibling.classList.contains('hide')) {
                 curElement.nextElementSibling.classList.remove('hide')
