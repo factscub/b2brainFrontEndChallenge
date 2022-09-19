@@ -21,30 +21,36 @@ export default function Main() {
 
     setLoading(true)
     clearTimeout(ID)
-
-    // dont fetch data if the entered input is empty.
-    if (input.length !== 0) {
-      ID = setTimeout(async () => {
-        const { data } = await axios.get(`${url}/?q=${input}`)
-
-        setFetchedResult(data)
+try {
+  
+      // dont fetch data if the entered input is empty.
+      if (input.length !== 0) {
+        ID = setTimeout(async () => {
+          const { data } = await axios.get(`${url}/?q=${input}`)
+  
+          setFetchedResult(data)
+          setLoading(false)
+  
+          // if no data is obtained from the server.
+          if (data.length !== 0) {
+            setHasData(true)
+            setShowFakeAccounts(false)
+          }
+          else {
+            setHasData(false)
+          }
+        }, timeout);
+      }
+      else {
+        setFetchedResult([])
         setLoading(false)
+        setHasData(false)
+      }
+} catch (error) {
 
-        // if no data is obtained from the server.
-        if (data.length !== 0) {
-          setHasData(true)
-          setShowFakeAccounts(false)
-        }
-        else {
-          setHasData(false)
-        }
-      }, timeout);
-    }
-    else {
-      setFetchedResult([])
-      setLoading(false)
-      setHasData(false)
-    }
+  console.log('message'+error)
+  
+}
 
   }
 
