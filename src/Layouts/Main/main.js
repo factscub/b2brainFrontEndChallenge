@@ -7,8 +7,8 @@ import UserContext from '../../ContextApi/contextApi'
 import fakeAccounts from '../../RawData/fakeAccounts'
 import { url } from '../../URL/url'
 
+let ID;
 export default function Main() {
-  let ID;
   const [timeout] = useState(600)
   const [enteredSearch, setEnteredSearch] = useState(false)
   const [fetchedResult, setFetchedResult] = useState([])
