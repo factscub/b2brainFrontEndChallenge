@@ -7,7 +7,7 @@ import SideNav from '../../Layouts/SideNav/sideNav';
 export default function Index() {
   return (
     <div id='dashboard'>
-      rgf
+      
       <SideNav />
       <Main />
     </div>
